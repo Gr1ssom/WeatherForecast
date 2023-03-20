@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.h1-container {
+    padding: 8px;
+}
+
+.form-container {
+    padding: 12px;
+}
+
+.search-label {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.search-input {
+    width: 100%;
+    height: 40px;
+    border-color: lightgrey;
+    border-width: thin;
+    padding: 0 15px;
+}
+
+.search-button {
+    padding: 10px 15px 5px;
+}
+
+.search-history-card {
+    padding: 10px 5px;
+}
+
+.past-search {
+    background-color: grey;
+    border-width: thin;
+    border-color: lightgrey;
+    border-style: solid;
+    border-radius: 3px;
+    margin: 0;
+    text-align: left;
+    width: 350px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+    color: black;
+}
+
+.current-weather-container {
+    border-color: lightgrey;
+    border-width: thin 0 thin thin;
+    border-style: solid;
+    border-radius: 3px;
+    margin: 20px 0 0 20px;
+    padding: 0 0 12px 0;
+}
+
+.current-title-container {
+    display: flex;
+}
+
+.current-title {
+    font-size: 40px;
+    margin: 15px 0 20px 20px;
+}
+
+.current-weather-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.current-temperature, .current-humidity, .current-wind-speed {
+    margin: 15px 20px;
+    font-size: 20px;
+}
+
+.current-uv-index {
+    font-size: 20px;
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+.current-number {
+    font-size: 20px;
+    display: inline;
+    color: white;
+    padding: 5px 10px;
+}
+
+.future-forecast-container {
+    margin: 5px 20px 0 20px;
+}
+
+.future-forecast-title {
+    font-size: 27px;
+}
+
+.future-card-details {
+    width: 17%;
+    padding: 7px 0 0 7px;
+}
+
+.future-date {
+    font-size: 23px;
+}
+
+.future-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 15px;
+}
+
+.future-temp, .future-humidity {
+    font-size: 17px;
+    font-weight: 200;
+}
