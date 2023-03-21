@@ -62,7 +62,7 @@ function displayWeather(data) {
         <img src="${iconUrl}" alt="${items[0].weather[0].description}">
         <p>Average Temperature: ${avgTemp.toFixed(1)}&deg;F</p>
         <p>Average Humidity: ${avgHumidity.toFixed(0)}%</p>
-        <p>Average Wind Speed: ${avgWindSpeed.toFixed(1)} mph</p>
+        <p>Average Wind Speed: ${avgWindSpeed.toFixed(1)} MPH</p>
       </div>
     `;
   });
