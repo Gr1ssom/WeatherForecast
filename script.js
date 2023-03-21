@@ -2,10 +2,16 @@ const apiKey = '3ab9a65c27933a9cb02a3842a6a429c6';
 const form = document.querySelector('#search-form');
 const searchInput = document.querySelector('#search-input');
 const weatherDisplay = document.querySelector('#weather-display');
+const searchHistory = document.querySelector('#search-history');
 
 form.addEventListener('submit', function(event) {
   event.preventDefault();
   const cityName = searchInput.value;
+  getWeather(cityName);
+});
+
+searchHistory.addEventListener('click', function(event) {
+  const cityName = event.target.textContent;
   getWeather(cityName);
 });
 
@@ -18,6 +24,8 @@ function getWeather(cityName) {
       const groupedData = groupByDay(data);
       // Display weather data for the next 5 days
       displayWeather(groupedData);
+      // Add city to search history
+      addToSearchHistory(cityName);
     })
     .catch(error => console.error(error));
 }
@@ -63,6 +71,9 @@ function displayWeather(data) {
   weatherDisplay.innerHTML = weatherHTML;
 }
 
-
-  // Display weather data on the page
-  weatherDisplay.innerHTML = weatherHTML;
+function addToSearchHistory(cityName) {
+  // Create HTML element to add to search history
+  const searchItem = document.createElement('li');
+  searchItem.textContent = cityName;
+  searchHistory.appendChild(searchItem);
+}
