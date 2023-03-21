@@ -29,4 +29,8 @@ Click inside the search box, enter a city, and the five day forecast will displa
 
 Thank you for using my app.
 
+Link to deployed app: https://gr1ssom.github.io/WeatherForecast/
+
+Link to repo: https://github.com/Gr1ssom/WeatherForecast
 ```
+Dylan Grissom
