@@ -1,118 +1,56 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.h1-container {
-    padding: 8px;
+h1 {
+  font-size: 3rem;
+  margin-top: 1rem;
 }
 
-.form-container {
-    padding: 12px;
+form {
+  display: flex;
+  margin-top: 2rem;
 }
 
-.search-label {
-    font-size: 22px;
-    font-weight: 500;
+input {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  border: none;
+  width: 60%;
 }
 
-.search-input {
-    width: 100%;
-    height: 40px;
-    border-color: lightgrey;
-    border-width: thin;
-    padding: 0 15px;
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  border: none;
+  background-color: #007bff;
+  color: white;
 }
 
-.search-button {
-    padding: 10px 15px 5px;
+#weather-display {
+  margin-top: 2rem;
 }
 
-.search-history-card {
-    padding: 10px 5px;
+.card {
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
-.past-search {
-    background-color: grey;
-    border-width: thin;
-    border-color: lightgrey;
-    border-style: solid;
-    border-radius: 3px;
-    margin: 0;
-    text-align: left;
-    width: 350px;
-    height: 45px;
-    line-height: 45px;
-    padding: 0 20px;
-    color: black;
+.card h2 {
+  margin-top: 0;
 }
 
-.current-weather-container {
-    border-color: lightgrey;
-    border-width: thin 0 thin thin;
-    border-style: solid;
-    border-radius: 3px;
-    margin: 20px 0 0 20px;
-    padding: 0 0 12px 0;
+.card p {
+  margin-top: 0;
 }
 
-.current-title-container {
-    display: flex;
-}
-
-.current-title {
-    font-size: 40px;
-    margin: 15px 0 20px 20px;
-}
-
-.current-weather-icon {
-    width: 80px;
-    height: 80px;
-}
-
-.current-temperature, .current-humidity, .current-wind-speed {
-    margin: 15px 20px;
-    font-size: 20px;
-}
-
-.current-uv-index {
-    font-size: 20px;
-    display: inline;
-    margin: 0 0 0 20px;
-}
-
-.current-number {
-    font-size: 20px;
-    display: inline;
-    color: white;
-    padding: 5px 10px;
-}
-
-.future-forecast-container {
-    margin: 5px 20px 0 20px;
-}
-
-.future-forecast-title {
-    font-size: 27px;
-}
-
-.future-card-details {
-    width: 17%;
-    padding: 7px 0 0 7px;
-}
-
-.future-date {
-    font-size: 23px;
-}
-
-.future-icon {
-    width: 50px;
-    height: 50px;
-    margin: 0 0 0 15px;
-}
-
-.future-temp, .future-humidity {
-    font-size: 17px;
-    font-weight: 200;
+.card img {
+  display: block;
+  margin: 0 auto;
 }
